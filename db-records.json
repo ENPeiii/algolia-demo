@@ -1,0 +1,85 @@
+{
+  "categories": [
+    { "id": "tech", "name": "技術文", "urlPath": "tech" },
+    { "id": "life", "name": "生活文", "urlPath": "life" }
+  ],
+  "topics": [
+    { "id": "topic_leetcode", "name": "Leetcode 刷題", "urlPath": "leetcode", "categoryId": "tech" },
+    { "id": "topic_angular", "name": "Angular 學習筆記", "urlPath": "angular", "categoryId": "tech" },
+    { "id": "topic_book-review", "name": "讀書心得", "urlPath": "book-review", "categoryId": "life" }
+  ],
+  "tags": [
+    { "id": "tag_angular", "name": "Angular", "urlPath": "angular" },
+    { "id": "tag_leetcode", "name": "Leetcode", "urlPath": "leetcode" },
+    { "id": "tag_typescript", "name": "TypeScript", "urlPath": "typescript" },
+    { "id": "tag_algorithm", "name": "演算法", "urlPath": "algorithm" },
+    { "id": "tag_ssr", "name": "SSR", "urlPath": "ssr" }
+  ],
+  "articles": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440001",
+      "title": "Angular 19 新功能介紹：Signals 完全指南",
+      "urlPath": "angular-19-signals-guide",
+      "content": "Angular 19 帶來了革命性的 Signals 響應式系統，本文將深入介紹 signal()、computed()、effect() 的使用方式。",
+      "categoryId": "tech",
+      "topicId": null,
+      "tagIds": ["tag_angular", "tag_typescript"],
+      "status": "published",
+      "publishedAt": "2024-12-15T00:00:00Z",
+      "createdAt": "2024-12-10T00:00:00Z",
+      "updatedAt": "2024-12-15T00:00:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440002",
+      "title": "Two Sum 解題思路與最佳解法",
+      "urlPath": "leetcode-two-sum",
+      "content": "LeetCode 第一題 Two Sum 是面試常見題目，本文介紹暴力解法、Hash Map 優化解法。",
+      "categoryId": "tech",
+      "topicId": "topic_leetcode",
+      "tagIds": ["tag_leetcode", "tag_algorithm"],
+      "status": "published",
+      "publishedAt": "2024-12-10T00:00:00Z",
+      "createdAt": "2024-12-05T00:00:00Z",
+      "updatedAt": "2024-12-10T00:00:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440003",
+      "title": "2024 年終回顧：從前端工程師到技術主管的成長之路",
+      "urlPath": "year-review-2024",
+      "content": "回顧 2024 年的職涯轉變，從專注寫程式到帶領團隊，分享在角色轉換過程中學到的軟實力與管理心得。",
+      "categoryId": "life",
+      "topicId": null,
+      "tagIds": [],
+      "status": "published",
+      "publishedAt": "2024-12-31T00:00:00Z",
+      "createdAt": "2024-12-28T00:00:00Z",
+      "updatedAt": "2024-12-31T00:00:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440004",
+      "title": "Angular SSR 實戰：解決 Hydration 常見問題",
+      "urlPath": "angular-ssr-hydration",
+      "content": "深入探討 Angular Server-Side Rendering 的 Hydration 機制，分析常見錯誤訊息與解決方案。",
+      "categoryId": "tech",
+      "topicId": "topic_angular",
+      "tagIds": ["tag_angular", "tag_ssr"],
+      "status": "published",
+      "publishedAt": "2024-12-25T00:00:00Z",
+      "createdAt": "2024-12-20T00:00:00Z",
+      "updatedAt": "2024-12-25T00:00:00Z"
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440005",
+      "title": "《重構》讀後感：寫出更好程式碼的藝術",
+      "urlPath": "book-review-refactoring",
+      "content": "Martin Fowler 經典著作《重構》的閱讀心得，分享書中最受用的重構手法。",
+      "categoryId": "life",
+      "topicId": "topic_book-review",
+      "tagIds": [],
+      "status": "published",
+      "publishedAt": "2024-09-15T00:00:00Z",
+      "createdAt": "2024-09-10T00:00:00Z",
+      "updatedAt": "2024-09-15T00:00:00Z"
+    }
+  ]
+}

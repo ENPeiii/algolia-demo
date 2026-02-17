@@ -1,0 +1,67 @@
+[
+  {
+    "objectID": "cm5x8k2a00001",
+    "hierarchy": {
+      "lvl0": "技術文",
+      "lvl1": "一般文章",
+      "lvl2": "Angular 19 新功能介紹：Signals 完全指南"
+    },
+    "type": "lvl2",
+    "url": "/blog/2024/12/angular-19-signals-guide",
+    "content": "Angular 19 帶來了革命性的 Signals 響應式系統，本文將深入介紹 signal()、computed()、effect() 的使用方式。",
+    "tags": ["Angular", "TypeScript"],
+    "publishedAtTimestamp": 1734220800
+  },
+  {
+    "objectID": "cm5x8k2a00002",
+    "hierarchy": {
+      "lvl0": "技術文",
+      "lvl1": "Leetcode 刷題",
+      "lvl2": "Two Sum 解題思路與最佳解法"
+    },
+    "type": "lvl2",
+    "url": "/blog/2024/12/leetcode-two-sum",
+    "content": "LeetCode 第一題 Two Sum 是面試常見題目，本文介紹暴力解法、Hash Map 優化解法。",
+    "tags": ["Leetcode", "演算法"],
+    "publishedAtTimestamp": 1733788800
+  },
+  {
+    "objectID": "cm5x8k2a00003",
+    "hierarchy": {
+      "lvl0": "生活文",
+      "lvl1": "一般文章",
+      "lvl2": "2024 年終回顧：從前端工程師到技術主管的成長之路"
+    },
+    "type": "lvl2",
+    "url": "/blog/2024/12/year-review-2024",
+    "content": "回顧 2024 年的職涯轉變，從專注寫程式到帶領團隊，分享在角色轉換過程中學到的軟實力與管理心得。",
+    "tags": ["年終回顧", "職涯發展"],
+    "publishedAtTimestamp": 1735603200
+  },
+  {
+    "objectID": "cm5x8k2a00008",
+    "hierarchy": {
+      "lvl0": "技術文",
+      "lvl1": "Angular 學習筆記",
+      "lvl2": "Angular SSR 實戰：解決 Hydration 常見問題"
+    },
+    "type": "lvl2",
+    "url": "/blog/2024/12/angular-ssr-hydration",
+    "content": "深入探討 Angular Server-Side Rendering 的 Hydration 機制，分析常見錯誤訊息與解決方案。",
+    "tags": ["Angular", "SSR"],
+    "publishedAtTimestamp": 1735084800
+  },
+  {
+    "objectID": "cm5x8k2a00016",
+    "hierarchy": {
+      "lvl0": "生活文",
+      "lvl1": "讀書心得",
+      "lvl2": "《重構》讀後感：寫出更好程式碼的藝術"
+    },
+    "type": "lvl2",
+    "url": "/blog/2024/09/book-review-refactoring",
+    "content": "Martin Fowler 經典著作《重構》的閱讀心得，分享書中最受用的重構手法。",
+    "tags": ["讀書心得", "重構"],
+    "publishedAtTimestamp": 1726358400
+  }
+]

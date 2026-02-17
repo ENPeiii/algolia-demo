@@ -1,0 +1,130 @@
+/* DocSearch 原生 CSS 變數 - 會覆蓋預設樣式 */
+:root {
+  /* 主色調 */
+  --docsearch-primary-color: #F5992A;
+  --docsearch-highlight-color: #FFD966;
+  
+  /* 文字顏色 */
+  --docsearch-text-color: #f5f6f7;
+  --docsearch-muted-color: #7f8497;
+  --docsearch-hit-color: #bec3c9;
+  --docsearch-hit-active-color: #fff;
+  --docsearch-logo-color: #fff;
+  --docsearch-secondary-text-color: #7f8497;
+  
+  /* Modal 背景 */
+  --docsearch-modal-width: 600px;
+  --docsearch-container-background: rgba(32, 32, 32, 0.8);
+  --docsearch-modal-background: #202020;
+  --docsearch-modal-shadow: inset 1px 1px 0 0 #3a3a3a, 0 3px 8px 0 #000;
+  
+  /* 搜尋框 */
+  --docsearch-searchbox-background: #1B1B1B;
+  --docsearch-searchbox-focus-background: #1B1B1B;
+  --docsearch-searchbox-shadow: inset 0 0 0 2px #F5992A;
+  
+  /* 搜尋結果 */
+  --docsearch-hit-background: #1B1B1B;
+  --docsearch-hit-shadow: none;
+  
+  /* Footer */
+  --docsearch-footer-background: #1B1B1B;
+  --docsearch-footer-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1), 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+  /* 快捷鍵樣式 */
+  --docsearch-key-gradient: linear-gradient(-26.5deg, #1B1B1B 0%, #2a2a2a 100%);
+  --docsearch-key-shadow: inset 0 -2px 0 0 #1B1B1B, inset 0 0 1px 1px #3a3a3a, 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* DocSearch 按鈕樣式覆寫 */
+@layer components {
+  .DocSearch-Button {
+    width: theme(spacing.12) !important;
+    height: theme(spacing.12) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: theme(borderRadius.full) !important;
+    background: color-mix(in oklch, var(--docsearch-primary-color) 15%, transparent) !important;
+    border: 1px solid color-mix(in oklch, var(--docsearch-primary-color) 30%, transparent) !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .DocSearch-Button:hover {
+    background: color-mix(in oklch, var(--docsearch-primary-color) 25%, transparent) !important;
+    border-color: color-mix(in oklch, var(--docsearch-primary-color) 50%, transparent) !important;
+    box-shadow: 0 0 0 4px color-mix(in oklch, var(--docsearch-primary-color) 10%, transparent) !important;
+  }
+
+  .DocSearch-Button-Container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .DocSearch-Search-Icon {
+    width: theme(spacing.5) !important;
+    height: theme(spacing.5) !important;
+    color: var(--docsearch-primary-color) !important;
+  }
+
+  /* 隱藏文字和快捷鍵 */
+  .DocSearch-Button-Placeholder,
+  .DocSearch-Button-Keys {
+    display: none !important;
+  }
+
+  /* 隱藏底部導航提示 */
+  .DocSearch-Commands {
+    display: none !important;
+  }
+
+  .DocSearch-Actions {
+    display: flex;
+  }
+
+  /* Clear 按鈕樣式調整 */
+  .DocSearch-Clear {
+    padding: 4px 12px !important;
+    margin-right: 8px !important;
+    border-radius: theme(borderRadius.md) !important;
+    background: color-mix(in oklch, var(--docsearch-muted-color) 20%, transparent) !important;
+    color: var(--docsearch-muted-color) !important;
+    font-size: 12px !important;
+    transition: all 0.15s ease !important;
+    cursor: pointer !important;
+  }
+
+  .DocSearch-Close {
+    cursor: pointer !important;
+    color: var(--docsearch-hit-active-color) !important;
+  }
+
+  .DocSearch-Clear:hover {
+    background: color-mix(in oklch, var(--docsearch-primary-color) 30%, transparent) !important;
+    color: var(--docsearch-text-color) !important;
+  }
+}
+
+/* DocSearch 額外樣式調整 - 只保留 :root 變數無法處理的 */
+
+/* 選中結果的背景色（原生變數不支援） */
+.DocSearch-Hit[aria-selected="true"] a {
+  background: var(--docsearch-primary-color) !important;
+}
+
+/* 分類標題顏色 */
+.DocSearch-Hit-source {
+  color: var(--docsearch-primary-color) !important;
+}
+
+/* 隱藏元素 */
+.DocSearch-Screen-Icon {
+  display: none !important;
+}
+
+/* 標題文字顏色 */
+.DocSearch-Title {
+  color: var(--docsearch-text-color) !important;
+}
